@@ -1,0 +1,14 @@
+.vscode/
+
+# python module
+build/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+
+archive/
+tempCodeRunnerFile.*
