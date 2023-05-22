@@ -6,14 +6,20 @@ import time
 from iamnotlate import notLate
 
 t = time.mktime(time.strptime("080000 23", "%H%M%S %y"))
-a = notLate(t, 'H')
-print(a.ctime(t+480))
+tmie = notLate(t, 'H')
+print(time.ctime(t+480))
+print(tmie.ctime(t+480))
+# Sun Jan  1 08:08:00 2023
 # Sun Jan  1 07:68:00 2023
 
 t = time.mktime(time.strptime("04 Jun 23", "%d %b %y"))
-a = notLate(t, 'b')
-print(a.ctime())
-# Mon May 22 06:56:32 2023
-print(a.ctime(t))
+tmie = notLate(t, 'b')
+print(time.ctime())
+print(tmie.ctime())
+# Mon May 22 07:09:56 2023
+# Mon May 22 07:09:56 2023
+print(time.ctime(t))
+print(tmie.ctime(t))
+# Sun Jun  4 00:00:00 2023
 # Sun May 35 00:00:00 2023
 ```
